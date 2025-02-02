@@ -17,4 +17,4 @@ user-config.py = This configuration file helps Pywikibot know which Wikipedia si
 
 .github/workflows/update-wikipedia.yml = This workflow automatically updates the Wikipedia page whenever new content is pushed to the GitHub repository.
 
-![alt text](https://github.com/BekeAtGithub/flaskEC2/blob/master/FlaskEC2.drawio.png)
+![alt text](https://github.com/BekeAtGithub/wikiDemo/blob/main/GitHub%20pyWiki%20Diagram.jpg)
