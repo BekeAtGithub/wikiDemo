@@ -1,0 +1,28 @@
+name: Update Wikipedia Page  # Name of the workflow
+
+on:
+  push:  # Trigger this workflow when code is pushed to the repository
+    branches:
+      - main  # Only run on the main branch
+
+jobs:
+  update_wikipedia:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner for GitHub Actions
+
+    steps:
+      - name: Checkout Repository  # Step 1: Clone the GitHub repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python  # Step 2: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'  # Use the latest version of Python
+
+      - name: Install Dependencies  # Step 3: Install required Python libraries
+        run: pip install pywikibot requests  # Install Pywikibot and requests
+
+      - name: Run Wikipedia Update Script  # Step 4: Execute the update script
+        env:
+          PYWIKIBOT_USERNAME: ${{ secrets.PYWIKIBOT_USERNAME }}  # Use the bot username from GitHub Secrets
+          PYWIKIBOT_PASSWORD: ${{ secrets.PYWIKIBOT_PASSWORD }}  # Use the bot password from GitHub Secrets
+        run: python update_wikipedia.py  # Run the script that updates Wikipedia
