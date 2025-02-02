@@ -16,3 +16,5 @@ update_wikipedia.py = This script fetches the content from a GitHub repository a
 user-config.py = This configuration file helps Pywikibot know which Wikipedia site and account to use.
 
 .github/workflows/update-wikipedia.yml = This workflow automatically updates the Wikipedia page whenever new content is pushed to the GitHub repository.
+
+![alt text](https://github.com/BekeAtGithub/flaskEC2/blob/master/FlaskEC2.drawio.png)
