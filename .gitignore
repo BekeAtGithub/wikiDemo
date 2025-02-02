@@ -1,0 +1,14 @@
+# Ignore Python virtual environments
+.venv/
+venv/
+
+# Ignore Pywikibot user configuration (which contains credentials)
+user-config.py
+user-password.py
+
+# Ignore any files that store secrets or API keys
+.env
+*.secrets
+*.keyvault
+pywikibot.pickle
+pywikibot.lwp
