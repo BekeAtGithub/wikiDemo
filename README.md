@@ -1,7 +1,7 @@
 Create a Wikipedia Bot Account
 
     Register a bot account on Wikipedia: Bot Registration / https://en.wikipedia.org/wiki/Help:Creating_a_bot
-    Request API access.
+    Request API access. 
 
     Will have to run python pwb.py generate_user_files to activate user-config.py file
 
